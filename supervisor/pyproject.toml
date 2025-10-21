@@ -11,4 +11,5 @@ dependencies = [
     "langgraph-cli[inmem]>=0.4.3",
     "langgraph-sdk>=0.2.9",
     "langgraph-supervisor>=0.0.29",
+    "openevals>=0.1.0",
 ]
