@@ -73,7 +73,7 @@ cd subagent
 uv sync
 
 # Install supervisor dependencies  
-cd /supervisor
+cd supervisor
 uv sync
 ```
 
