@@ -1,10 +1,11 @@
 from langgraph_supervisor import create_supervisor
 from langchain_openai import ChatOpenAI
 from langgraph.pregel.remote import RemoteGraph
+import os
 
 subagent_graph = RemoteGraph(
     "agent",  # assistant_id as positional argument
-    url="http://localhost:8000",
+    url=os.getenv("SUBAGENT_URL"),
     distributed_tracing=True
 )
 model = ChatOpenAI(model="gpt-4o")
